@@ -28,19 +28,15 @@ function crb_attach_theme_options() {
         Field::make( 'image', 'crb_about_photo', 'Фото' )->set_value_type( 'url'),
         Field::make( 'text', 'crb_about_title', 'Заголовок' ),
         Field::make( 'text', 'crb_about_description', 'Опис' ),
-        Field::make( 'complex', 'crb_about_list', 'Перелік' )
-            ->add_fields( array(
-                Field::make( 'text', 'crb_about_li', 'Рядок' ),
-            ),
-        ) 
+        Field::make( 'complex', 'crb_about_list', 'Перелік' )->add_fields( array(
+            Field::make( 'text', 'crb_about_li', 'Рядок' ),
+        )),
     ) )
     ->add_tab( 'Послуги', array(
-       Field::make( 'complex', 'crb_services', 'Послуги' )
-            ->add_fields( array(
-                Field::make( 'text', 'crb_service_title', 'Заголовок' ),
-                Field::make( 'text', 'crb_service_content', 'Опис' ),
-            ),
-        )  
+        Field::make( 'complex', 'crb_services', 'Послуги' )->add_fields( array(
+            Field::make( 'text', 'crb_service_title', 'Заголовок' ),
+            Field::make( 'rich_text', 'crb_service_content', 'Опис' ),
+        )),
     ) )
     ->add_tab( 'Правова інформація', array(
         Field::make( 'rich_text', 'crb_info_content', 'Текст' ),

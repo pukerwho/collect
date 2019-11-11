@@ -50,7 +50,7 @@
         <div class="text-2xl">
           <?php echo carbon_get_theme_option( 'crb_namesite' ); ?>
         </div>
-        <div class="hidden md:block">
+        <div class="hidden md:flex">
           <?php wp_nav_menu([
             'theme_location' => 'head_menu',
             'container' => 'nav',

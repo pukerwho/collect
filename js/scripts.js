@@ -14,6 +14,16 @@ $(window).scroll(function(){
   }
 })
 
+//Плавный скролл
+$(document).on('click', '.header_bottom a[href^="#"]', function (event) {
+  event.preventDefault();
+  var target = $($.attr(this, 'href'));
+  var targetScroll =  target.offset().top;
+  $('html, body').animate({
+      scrollTop: targetScroll
+  }, 500);
+});
+
 var swiperMainWelcome = function() {
   if ($(document).width() > 760) {
     var swiperWelcome = new Swiper('.swiper-welcome-container', {
