@@ -13,7 +13,7 @@
 			?>
 				<details class="uslugi_item collect-animate mb-5">
 				  <summary><?php echo $service['crb_service_title'] ?></summary>
-				  <p class="shadow-lg px-5 py-3"><?php echo $service['crb_service_content'] ?></p>
+				  <div class="shadow-lg px-5 py-3"><?php echo apply_filters( 'the_content', $service['crb_service_content'] ); ?></div>
 				</details>		
 			<?php endforeach; ?>
 		</div>
