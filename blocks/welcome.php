@@ -1,4 +1,4 @@
-<div class="welcome mb-10">
+<div class="welcome collect-animate mb-10">
 	<div class="swiper-container swiper-welcome-container">
 		<div class="swiper-wrapper">
 			<?php 

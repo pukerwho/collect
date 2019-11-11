@@ -24,6 +24,10 @@ $(document).on('click', '.header_bottom a[href^="#"]', function (event) {
   }, 500);
 });
 
+//Анимация
+$('.header_botom.collect-animate').addClass('collect-show');
+$('.welcome.collect-animate').addClass('collect-show');
+
 var swiperMainWelcome = function() {
   if ($(document).width() > 760) {
     var swiperWelcome = new Swiper('.swiper-welcome-container', {

@@ -1,13 +1,13 @@
 <div class="contact p-5 mb-10">
 	<div class="relative mb-5">
-		<h2 class="text-center">КОНТАКТИ</h2>
-		<div class="h2-after">
+		<h2 class="collect-animate text-center">КОНТАКТИ</h2>
+		<div class="h2-after collect-animate">
 			Зв'язатися з нами
 		</div>	
 	</div>
 	<div class="container mx-auto">
 		<div class="w-full md:w-3/5 mx-auto">
-			<div class="flex items-center mb-5">
+			<div class="contact_item flex items-center mb-5">
 				<div class="flex items-center font-semibold">
 					<img src="<?php bloginfo('template_url') ?>/img/smartphone.svg" alt="" width="25px" class="mr-3">
 					<div>Телефон для зв'язку з питань заборгованості: </div>
@@ -16,7 +16,7 @@
 					<?php echo carbon_get_theme_option( 'crb_contact_phone_zadolzh' ); ?>
 				</div>
 			</div>
-			<div class="flex items-center mb-5">
+			<div class="contact_item flex items-center mb-5">
 				<div class="flex items-center font-semibold">
 					<img src="<?php bloginfo('template_url') ?>/img/smartphone.svg" alt="" width="25px" class="mr-3">
 					<div>Телефон для зв'язку з питань співробітництва: </div>
@@ -25,7 +25,7 @@
 					<?php echo carbon_get_theme_option( 'crb_contact_phone_sotr' ); ?>
 				</div>
 			</div>
-			<div class="flex items-center mb-5">
+			<div class="contact_item flex items-center mb-5">
 				<div class="flex items-center font-semibold">
 					<img src="<?php bloginfo('template_url') ?>/img/address.svg" alt="" width="25px" class="mr-3">
 					<div>Адреса: </div>
@@ -34,7 +34,7 @@
 					<?php echo carbon_get_theme_option( 'crb_address' ); ?>
 				</div>
 			</div>
-			<div class="flex items-center mb-5">
+			<div class="contact_item flex items-center mb-5">
 				<div class="flex items-center font-semibold">
 					<img src="<?php bloginfo('template_url') ?>/img/email.svg" alt="" width="25px" class="mr-3">
 					<div>Email: </div>

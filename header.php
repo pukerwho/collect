@@ -45,7 +45,7 @@
       </div>
       
     </div>
-    <div class="header_bottom px-5 py-3 md:px-5">
+    <div class="header_bottom collect-animate px-5 py-3 md:px-5">
       <div class="container flex justify-center md:justify-between items-center mx-auto">
         <div class="text-2xl">
           <?php echo carbon_get_theme_option( 'crb_namesite' ); ?>

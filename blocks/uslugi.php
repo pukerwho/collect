@@ -1,8 +1,8 @@
 <div class="uslugi">
 	<div class="p-5">
 		<div class="relative mb-5">
-			<h2 class="text-center">Послуги</h2>
-			<div class="h2-after">
+			<h2 class="collect-animate text-center">Послуги</h2>
+			<div class="h2-after collect-animate">
 				Наші послуги
 			</div>	
 		</div>
@@ -11,7 +11,7 @@
 				$services = carbon_get_theme_option('crb_services');
 				foreach ($services as $service): 
 			?>
-				<details class="mb-5">
+				<details class="uslugi_item collect-animate mb-5">
 				  <summary><?php echo $service['crb_service_title'] ?></summary>
 				  <p class="shadow-lg px-5 py-3"><?php echo $service['crb_service_content'] ?></p>
 				</details>		

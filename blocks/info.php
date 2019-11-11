@@ -1,7 +1,7 @@
 <div class="info p-5 mb-10">
 	<div class="relative mb-5">
-		<h2 class="text-center">Правова інформація</h2>
-		<div class="h2-after">
+		<h2 class="collect-animate text-center">Правова інформація</h2>
+		<div class="h2-after collect-animate">
 			Інформація
 		</div>	
 	</div>
