@@ -31,7 +31,7 @@
 					<div>Адреса: </div>
 				</div> 
 				<div>
-					<?php echo carbon_get_theme_option( 'crb_contact_address' ); ?>
+					<?php echo carbon_get_theme_option( 'crb_address' ); ?>
 				</div>
 			</div>
 			<div class="flex items-center mb-5">
@@ -40,7 +40,7 @@
 					<div>Email: </div>
 				</div> 
 				<div>
-					<?php echo carbon_get_theme_option( 'crb_contact_email' ); ?>
+					<?php echo carbon_get_theme_option( 'crb_email' ); ?>
 				</div>
 			</div>
 			<div class="shadow-lg">
@@ -48,11 +48,10 @@
 					Зворотній зв'язок	
 				</div>
 				<div class="p-4">
-					Текст
 					<?php echo carbon_get_theme_option( 'crb_contact_beforeform' ); ?>
 				</div>
 				<div class="p-4">
-					<?php echo do_shortcode('[contact-form-7 id="11" title="Обратная связь"]') ?>
+					<?php echo do_shortcode('[contact-form-7 id="9" title="Зворотній звязок"]') ?>
 				</div>
 			</div>
 		</div>

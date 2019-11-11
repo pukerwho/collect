@@ -7,14 +7,15 @@
 			</div>	
 		</div>
 		<div class="w-2/3 mx-auto">
-			<details class="mb-5">
-			  <summary>Durmstrang Institute</summary>
-			  <p class="shadow-lg px-5 py-3">You’ll certainly hear a few interesting stories at Durmstrang, seeing as this is the school that Dark wizard Gellert Grindelwald was expelled from. </p>
-			</details>	
-			<details class="mb-5">
-			  <summary>Durmstrang Institute</summary>
-			  <p class="shadow-lg px-5 py-3">You’ll certainly hear a few interesting stories at Durmstrang, seeing as this is the school that Dark wizard Gellert Grindelwald was expelled from. </p>
-			</details>	
+			<?php 
+				$services = carbon_get_theme_option('crb_services');
+				foreach ($services as $service): 
+			?>
+				<details class="mb-5">
+				  <summary><?php echo $service['crb_service_title'] ?></summary>
+				  <p class="shadow-lg px-5 py-3"><?php echo $service['crb_service_content'] ?></p>
+				</details>		
+			<?php endforeach; ?>
 		</div>
 	</div>
 </div>

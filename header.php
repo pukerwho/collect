@@ -30,7 +30,7 @@
             <div class="mr-2">Email: </div>  
           </div>
           <div>
-            123
+            <?php echo carbon_get_theme_option( 'crb_email' ); ?>
           </div>
         </div>
         <div class="flex align-center">
@@ -39,7 +39,7 @@
             <div class="mr-2">Адреса: </div>  
           </div>
           <div>
-            123
+            <?php echo carbon_get_theme_option( 'crb_address' ); ?>
           </div>
         </div>
       </div>
@@ -48,7 +48,6 @@
     <div class="header_bottom px-5 py-3 md:px-5">
       <div class="container flex justify-center md:justify-between items-center mx-auto">
         <div class="text-2xl">
-          Name
           <?php echo carbon_get_theme_option( 'crb_namesite' ); ?>
         </div>
         <div class="hidden md:block">
