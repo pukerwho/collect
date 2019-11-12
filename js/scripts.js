@@ -20,7 +20,7 @@ $(window).scroll(function(){
 $(document).on('click', '.header_bottom a[href^="#"]', function (event) {
   event.preventDefault();
   var target = $($.attr(this, 'href'));
-  var targetScroll =  target.offset().top;
+  var targetScroll =  target.offset().top - 110;
   $('html, body').animate({
       scrollTop: targetScroll
   }, 500);
