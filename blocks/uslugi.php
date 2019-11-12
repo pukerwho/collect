@@ -6,7 +6,7 @@
 				Наші послуги
 			</div>	
 		</div>
-		<div class="w-2/3 mx-auto">
+		<div class="w-full md:w-2/3 mx-auto">
 			<?php 
 				$services = carbon_get_theme_option('crb_services');
 				foreach ($services as $service): 

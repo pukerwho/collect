@@ -6,7 +6,7 @@
 		</div>	
 	</div>
 	<div class="container mx-auto">
-		<div class="w-4/5 text-lg mx-auto">
+		<div class="w-full md:w-4/5 text-lg mx-auto">
 			<?php echo apply_filters( 'the_content', carbon_get_theme_option( 'crb_info_content' ) ); ?>
 		</div>
 	</div>
