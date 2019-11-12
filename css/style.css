@@ -43047,7 +43047,40 @@ span.wpcf7-list-item {
       .mobile_menu span:nth-child(2) {
         margin-top: 10px; }
       .mobile_menu span:nth-child(3) {
-        margin-top: 20px; } }
+        margin-top: 20px; }
+    .mobile_menu.active .mobile_menu_span {
+      height: 2px;
+      margin-top: 10px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+      .mobile_menu.active .mobile_menu_span:nth-child(2) {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+      .mobile_menu.active .mobile_menu_span:nth-child(3) {
+        display: none; } }
+
+.mobile_cover {
+  width: 80%;
+  min-height: 100vh;
+  position: fixed;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  transform: translateX(-110%);
+  z-index: 9;
+  -webkit-transition: all 0.75s;
+  -o-transition: all 0.75s;
+  transition: all 0.75s; }
+  .mobile_cover.active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  .mobile_cover li {
+    padding-left: 0; }
+    .mobile_cover li:before {
+      content: none; }
 
 .welcome.collect-animate {
   -webkit-transform: scale(0.9);

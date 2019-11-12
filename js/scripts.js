@@ -1,10 +1,3 @@
-$('.toogle-menu').on('click', function(e) {
-  e.preventDefault;
-  $(this).toggleClass('toogle-menu_active');
-  $('.slide-menu').toggleClass('slide-menu_active');
-  $('.menu li').toggleClass('animate-left');
-});
-
 $(window).scroll(function(){
   var h_scroll = $(this).scrollTop();
   if (h_scroll > 56) {
@@ -27,6 +20,12 @@ $(document).on('click', '.header_bottom a[href^="#"]', function (event) {
 //Анимация
 $('.header_botom.collect-animate').addClass('collect-show');
 $('.welcome.collect-animate').addClass('collect-show');
+
+//Мобильное меню
+$('.mobile_menu').on('click', function(){
+  $(this).toggleClass('active');
+  $('.mobile_cover').toggleClass('active');
+})
 
 var swiperMainWelcome = function() {
   if ($(document).width() > 760) {

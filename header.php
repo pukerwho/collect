@@ -46,8 +46,8 @@
       
     </div>
     <div class="header_bottom collect-animate px-5 py-3 md:px-5">
-      <div class="container flex justify-center md:justify-between items-center mx-auto">
-        <div class="text-2xl">
+      <div class="container flex justify-between items-center mx-auto">
+        <div class="text-xl md:text-2xl">
           <?php echo carbon_get_theme_option( 'crb_namesite' ); ?>
         </div>
         <div class="hidden md:flex">
@@ -57,12 +57,19 @@
             'menu_id' => 'head_menu',
           ]); ?>  
         </div>
-        <!-- <div class="mobile_menu flex md:hidden cursor-pointer">
+        <div class="mobile_menu flex relative md:hidden cursor-pointer">
           <span class="mobile_menu_span"></span>
           <span class="mobile_menu_span"></span>
           <span class="mobile_menu_span"></span>
-        </div> -->
+        </div>
       </div>
     </div>
   </header>
+  <div class="mobile_cover block md:hidden px-5 py-3">
+    <?php wp_nav_menu([
+      'theme_location' => 'head_menu',
+      'container' => 'nav',
+      'menu_id' => 'head_menu',
+    ]); ?>
+  </div>
   <section id="content" role="main">
